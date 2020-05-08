@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<title>공공알림문자 서비스</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="js/common.js"></script>
+</head> 
+
+<body> 
+
+<div id="wrap">
+
+	<!-- header -->
+	<div id="header">
+		<h1><a href="index.html"><img src="img/telecom.png" alt=""></a></h1>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container">
+		<!-- content -->
+		<div id="content">
+			<div class="things t_step">
+				<strong>휴대폰으로 공공기관 통지서를<br>문자로 받아 보세요~</strong>
+				<img src="img/step_bg.png" alt="">
+				<p>공공알림문자 서비스는 국가 기관에서 발행하는 공지서를<br>SMS/MMS 문자서비스로 받아 보실 수 있는 무료 서비스입니다.</p>
+			</div>
+			<div class="join">
+				<h2>서비스 이용을 위해 <em>휴대폰 번호</em>와<br><em>생년월일</em>을 입력해 주세요</h2>
+				<hr class="hr_bg">
+
+				<div class="form_table">
+					<form name="f_receive" action="" method="post">
+						<label>휴대폰</label>
+						<div class="item i_wrap">
+							<span class="w30">
+								<select name="phone_01" id="phone_01">
+									<option>010</option>
+									<option>옵션 둘</option>
+									<option>옵션 셋</option>
+								</select>
+							</span> 
+							<span class="w05">-</span> 
+							<span class="w30"><input type="text" name="phone_02" title="휴대폰 번호" id="phone_02" class="i_text" maxlength="4"></span> 
+							<span class="w05">-</span> 
+							<span class="w30"><input type="text" name="phone_03" title="휴대폰 번호" id="phone_03" class="i_text" maxlength="4"></span> 
+						</div>
+
+						<label>생년월일</label>
+						<div class="item i_wrap">
+							<span class="w30">
+								<select name="" id="">
+									<option>1900</option>
+									<option>옵션 둘</option>
+									<option>옵션 셋</option>
+								</select>
+							</span> 
+							<span class="w10">년</span> 
+							<span class="w20">
+								<select name="" id="">
+									<option>1</option>
+									<option>11</option>
+									<option>12</option>
+								</select>
+							</span> 
+							<span class="w10">월</span> 
+							<span class="w20">
+								<select name="" id="">
+									<option>1</option>
+									<option>23</option>
+									<option>24</option>
+								</select>
+							</span> 
+							<span class="w10">일</span> 
+						</div>
+
+						<div class="btn_box">
+							<button type="button" id="f_receive_submit" class="gray">인증번호 받기</button>
+						</div>
+					</form>
+
+					<form name="f_insert" action="" method="post">
+						<label>인증번호</label>
+						<div class="item">
+							<input type="text" name="f_num" title="레이블 텍스트" id="f_num" class="i_text w66">
+							<button type="button" id="f_insert_submit" class="i_help w30">본인인증</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<div id="footer">
+		<p class="copyR">COPYRIGHT SK TELECOM CO., LTD. ALL RIGHTS RESERVED</p>
+	</div>
+	<!-- //footer -->
+
+	<!-- 팝업 -->
+
+	<div id="popup" class="modal_box">
+		<div class="modal_body">
+			<p>인증번호가 전송되었습니다.</p>
+			<div class="btn_box">
+				<a href="javascript:" onclick="closeLayer('popup'); return false;" class="w40">확인</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup_02" class="modal_box">
+		<div class="modal_body">
+			<p>본인인증이 완료되었습니다.</p>
+			<div class="btn_box">
+				<a href="javascript:" onclick="location.href='step_02.html'" class="w40">확인</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body> 
+</html>

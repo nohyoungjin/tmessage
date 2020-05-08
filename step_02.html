@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<title>공공알림문자 서비스</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="js/common.js"></script>
+</head> 
+
+<body> 
+
+<div id="wrap">
+
+	<!-- header -->
+	<div class="fix" id="header">
+		<h1><a href="index.html"><img src="img/telecom.png" alt=""></a></h1>
+		<span>010-0000-0000</span>
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container">
+		<!-- content -->
+		<div id="content">
+			<div class="join">
+				<h2>공공알림문자 서비스 가입<br>개인정보 활용동의 안내</h2>
+				<p class="message">본 서비스는 공공 기관으로부터 개인 고객들에게 발송하는<br>공익성 메시지를 위탁 발송해주는 상품입니다.</p>
+
+				<hr class="hr_bg">
+
+				<form name="f_consent" action="" method="post">
+					<div class="form_table">
+						<label>개인정보 수집 및 이용에 대한 동의 (필수동의)</label>
+						<div class="item term_inner">
+							
+							<p>공공 알림문자 서비스(이하 “서비스”라 한다)와 관련하여, 본인은 동의내용을 숙지하였으며, 이에 따라 본인의 개인정보를 귀사(SK텔레콤주식회사)가 수집 및 이용하는 것에 대해 동의합니다.</p>
+							
+							<strong>공공 알림문자 서비스 관련 개인정보 수집 및 이용의 업무 안내</strong>
+							
+							<table cellspacing="0" border="1"class="tbl_type">
+							<caption>개인정보 수집 및 이용에 대한 동의</caption>
+							<colgroup>
+								<col width="45%"><col width="25%"><col width="30%">
+							</colgroup>
+								<thead>
+									<tr>
+									<th scope="col">수집·이용목적</th>
+									<th scope="col">수집항목</th>
+									<th scope="col">보유 및 이용기간</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									<td class="t_left">
+										<ul>
+											<li>공공기관으로부터 고객에게 발송하는 공익성 메시지 발송 목적</li>
+											<li>공공기관이 보유한 고객 CI와 SK텔레콤이 보유한 고객 회선번호의 조합</li>
+										</ul>
+									</td>
+									<td>고객CI값<br>회선번호</td>
+									<td>고객CI값<br>회선번호</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<ul>
+								<li>본 동의는 서비스의 본질적 기능 제공을 위한 개인정보 수집/이용에 대한 동의로서, 동의하지 않으실 경우 서비스 제공이 불가능합니다.</li>
+								<li>법령에 따른 개인정보의 수집/이용, 계약의 이행/편의증진을 위한 개인정보 취급위탁 및 개인정보 취급과 관련된 일반 사항은 이동전화 개인정보 취급방침에 따릅니다.</li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="app">
+						<div class="checks">
+							<input type="checkbox" name="s01" id="s01"> 
+							<label for="s01"><span>본인은 상기와 같이 동의내용을 숙지하였으며, 귀사 (SK텔레콤 주식회사)가 개인정보 수집 및 이용하는 것에 동의합니다.</span></label> 
+						</div>
+					</div>
+
+					<!--  -->
+
+					<!-- <div class="form_table">
+						<label>개인정보 제3자 제공 동의 (필수동의)</label>
+						<div class="item">
+							<textarea name="" cols="50" rows="5" title="" class="i_text"></textarea>
+						</div>
+					</div>
+
+					<div class="app">
+						<div class="checks">
+							<input type="checkbox" name="s02" id="s02"> 
+							<label for="s02"><span>본인은 상기와 같이 동의내용을 숙지하였으며, 귀사 (SK텔레콤 주식회사)가 수집한 본인의 개인정보를 제 3자에게 제공하는 것에 대해 동의합니다.</span></label> 
+						</div>
+					</div> -->
+
+					<div class="btn_box_2n">
+						<button type="button" id="f_consent_submit">동의</button>
+						<a href="javascript:" class="back">취소</a>
+					</div>
+				</form>
+
+			</div>
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<div id="footer">
+		<p class="copyR">COPYRIGHT SK TELECOM CO., LTD. ALL RIGHTS RESERVED</p>
+	</div>
+	<!-- //footer -->
+
+	<!-- 팝업 -->
+
+	<div id="popup" class="modal_box">
+		<!-- <div class="modal_header">
+			<a href="javascript:" onclick="closeLayer('popup'); return false;" class="popup_close">닫기</a>
+		</div> -->
+		<div class="modal_body">
+			<p>서비스 가입이 완료되었습니다.<br><span class="red">확인</span>을 누르시면 첫 화면으로 이동합니다.</p>
+			<div class="btn_box">
+				<a href="javascript:" onclick="closeLayer('popup'); return false;" class="w40">확인</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body> 
+</html>
