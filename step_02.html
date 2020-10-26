@@ -37,7 +37,7 @@
 
 				<hr class="hr_bg">
 
-				<form name="f_consent" action="" method="post">
+				<form method="post" action="" name="f_consent">
 					<div class="form_table">
 						<label>개인정보 수집 및 이용에 대한 동의 (필수동의)</label>
 						<div class="item term_inner">
@@ -46,10 +46,12 @@
 							
 							<strong>공공 알림문자 서비스 관련 개인정보 수집 및 이용의 업무 안내</strong>
 							
-							<table cellspacing="0" border="1"class="tbl_type">
+							<table cellspacing="0" border="1" class="tbl_type">
 							<caption>개인정보 수집 및 이용에 대한 동의</caption>
 							<colgroup>
-								<col width="45%"><col width="25%"><col width="30%">
+								<col width="45%">
+								<col width="25%">
+								<col width="30%">
 							</colgroup>
 								<thead>
 									<tr>
@@ -128,12 +130,12 @@
 
 	<div id="popup" class="modal_box">
 		<!-- <div class="modal_header">
-			<a href="javascript:" onclick="closeLayer('popup'); return false;" class="popup_close">닫기</a>
+			<a href="javascript:" class="popup_close" onclick="closeLayer('popup'); return false;">닫기</a>
 		</div> -->
 		<div class="modal_body">
 			<p>서비스 가입이 완료되었습니다.<br><span class="red">확인</span>을 누르시면 첫 화면으로 이동합니다.</p>
 			<div class="btn_box">
-				<a href="javascript:" onclick="closeLayer('popup'); return false;" class="w40">확인</a>
+				<a href="javascript:" class="w40" onclick="closeLayer('popup'); return false;">확인</a>
 			</div>
 		</div>
 	</div>

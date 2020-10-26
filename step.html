@@ -40,7 +40,7 @@
 				<hr class="hr_bg">
 
 				<div class="form_table">
-					<form name="f_receive" action="" method="post">
+					<form method="post" action="" name="f_receive">
 						<label>휴대폰</label>
 						<div class="item i_wrap">
 							<span class="w30">
@@ -51,9 +51,9 @@
 								</select>
 							</span> 
 							<span class="w05">-</span> 
-							<span class="w30"><input type="text" name="phone_02" title="휴대폰 번호" id="phone_02" class="i_text" maxlength="4"></span> 
+							<span class="w30"><input type="text" name="phone_02" id="phone_02" class="i_text" maxlength="4" title="휴대폰 번호"></span> 
 							<span class="w05">-</span> 
-							<span class="w30"><input type="text" name="phone_03" title="휴대폰 번호" id="phone_03" class="i_text" maxlength="4"></span> 
+							<span class="w30"><input type="text" name="phone_03" id="phone_03" class="i_text" maxlength="4" title="휴대폰 번호"></span> 
 						</div>
 
 						<label>생년월일</label>
@@ -89,10 +89,10 @@
 						</div>
 					</form>
 
-					<form name="f_insert" action="" method="post">
+					<form method="post" action="" name="f_insert">
 						<label>인증번호</label>
 						<div class="item">
-							<input type="text" name="f_num" title="레이블 텍스트" id="f_num" class="i_text w66">
+							<input type="text" name="f_num" id="f_num" class="i_text w66">
 							<button type="button" id="f_insert_submit" class="i_help w30">본인인증</button>
 						</div>
 					</form>
@@ -119,7 +119,7 @@
 		<div class="modal_body">
 			<p>인증번호가 전송되었습니다.</p>
 			<div class="btn_box">
-				<a href="javascript:" onclick="closeLayer('popup'); return false;" class="w40">확인</a>
+				<a href="javascript:" class="w40" onclick="closeLayer('popup'); return false;">확인</a>
 			</div>
 		</div>
 	</div>
@@ -128,7 +128,7 @@
 		<div class="modal_body">
 			<p>본인인증이 완료되었습니다.</p>
 			<div class="btn_box">
-				<a href="javascript:" onclick="location.href='step_02.html'" class="w40">확인</a>
+				<a href="javascript:" class="w40" onclick="location.href='step_02.html'">확인</a>
 			</div>
 		</div>
 	</div>
